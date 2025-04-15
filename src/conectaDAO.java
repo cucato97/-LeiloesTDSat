@@ -9,11 +9,13 @@ import javax.swing.JOptionPane;
 public class conectaDAO {
 
 
+    
+
     public Connection connectDB() {
         Connection conn = null;
 
         try {
-            String url = "jdbc:mysql://localhost:3306/uc11"; 
+            String url = "jdbc:mysql://localhost:3306/uc11?useSSL=false"; 
             String user = "root"; 
             String password = "root"; 
 
@@ -24,9 +26,4 @@ public class conectaDAO {
 
         return conn;
     }
-    
-
-    
- 
-
 }
